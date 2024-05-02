@@ -1,0 +1,16 @@
+.car-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: solid 1px gainsboro;
+}
+
+.car {
+    background-color: gainsboro;
+    margin: 20px;
+    padding: 10px;
+    border: darkgrey solid 1px ;
+    border-radius: 20px;
+}
