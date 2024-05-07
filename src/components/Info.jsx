@@ -42,7 +42,7 @@ const Info = () => {
             const interval = setInterval(fetchData, 60 * 60 * 1000);
             // 컴포넌트가 언마운트될 때 clearInterval을 호출하여 setInterval을 정리
             return () => clearInterval(interval);
-    },[])
+    },[todayFull])
     
     useEffect(()=>{
       if(todayFull == endDay){
@@ -60,10 +60,9 @@ const Info = () => {
   return (
     <div className='info-container'> 
     <div className='null'>
-      <p>
-
-      </p>
+      {noticeData.length==1? null: <p style={{marginTop:"80px"}}></p>}
     </div>
+      <p>{noticeData.length == 0 ? "공지사항없음":""}</p>
        {noticeData.map((item, index) => (
           <div className='notice' key={index} onClick={detailHandler}>
             <BsFillInfoSquareFill style={{color:"#4974FF", fontSize:'30px',backgroundColor:'white',padding:'10px', borderRadius:'10px', margin:'10px'}} />
@@ -71,9 +70,10 @@ const Info = () => {
             <div>
             <p style={{marginTop:'30px'}}>{item.제목}</p>
            </div>
-            <p>{none}</p>
+           
            </div>
     ))}
+    <p className='top'>{noticeData.length == 1 ? "":null}</p>
     </div>
   )
 }

@@ -11,7 +11,6 @@ const Header = () => {
 
     // 날씨 api
     const cityName = "Naju";
-    const API_KEY = "fab33b41c145c805006f57f31002680b";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}&lang=kr&units=metric`;
     
     useEffect(()=>{
@@ -23,6 +22,7 @@ const Header = () => {
             setCloud(res.data.weather[0].description)
             setTemp(parseInt(res.data.main.temp+2))
             setFeelTemp(parseInt(res.data.main.feels_like+2))
+            console.log(res.data)
         }).catch((err)=>console.log(err))
         }
         weather();

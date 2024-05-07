@@ -12,11 +12,9 @@ const Member = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        console.log(todayFull)
         const response = await axios.get('/apiList/List');
         console.log(todayFull);
         const filteredMemberList = response.data.filter(item => item['일자 '].replace(/\s/g,'') == todayFull);
-        console.log(filteredMemberList)
         const tardyList = filteredMemberList.filter(item => {
           if (item['출근시간 ']) {
             const timeParts = item['출근시간 '].split(' ')[3].split(':')[0];
@@ -25,6 +23,7 @@ const Member = () => {
           return false;
         });
         setTardyList(tardyList);
+        console.log(tardyList)
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -39,10 +38,8 @@ const Member = () => {
       try {
         console.log("sk",todayFull)
         const response = await axios.get('/apiRest/rest');
-        console.log(response.data)
         const filterRestList = response.data.filter(item => item['근태일자'].replace(/\s/g,'') == todayFull );
         setRestList(filterRestList);
-        console.log('rr',restList)
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -54,7 +51,7 @@ const Member = () => {
   
   return (
     <div className='member-container'>
-      <p>월차</p>
+      <p>연차/반차</p>
       <div className='rest'> 
       {restList.map((item, index)=> (
         <div className='memberList' key={index}>
