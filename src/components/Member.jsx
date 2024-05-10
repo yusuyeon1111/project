@@ -13,7 +13,6 @@ const Member = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get('/apiList/List');
-        console.log(todayFull);
         const filteredMemberList = response.data.filter(item => item['일자 '].replace(/\s/g,'') == todayFull);
         const tardyList = filteredMemberList.filter(item => {
           if (item['출근시간 ']) {

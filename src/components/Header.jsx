@@ -11,6 +11,7 @@ const Header = () => {
 
     // 날씨 api
     const cityName = "Naju";
+    const API_KEY = process.env.REACT_APP_API_KEY;
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}&lang=kr&units=metric`;
     
     useEffect(()=>{
@@ -42,7 +43,7 @@ const Header = () => {
         <div className='weather-container'>
             <div className='icon'>
                 <img src={icon} width='70px'/>
-                <h3>{cloud}</h3>
+                <h2>{cloud}</h2>
             </div>
             <div className='weather'>
                 <p>현재온도 :</p>
