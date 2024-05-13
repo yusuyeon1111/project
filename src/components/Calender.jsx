@@ -57,7 +57,10 @@ const Calender = () => {
         formatDay={(locale, date)=>moment(date).format('D')}
         showNeighboringMonth={false}
         calendarType='hebrew'
-        tileDisabled={({date,view})=>!mark.find((x)=> x === moment(date).format("YYYY/MM/DD"))}
+        tileDisabled={({ date }) =>
+          !moment(date, "YYYY/MM/DD").isSame(moment(), 'day') && !mark.find(x => moment(x).isSame(date, 'day'))
+        }
+        
         tileContent={({date, view}) => {
           const formattedDate = moment(date).format("YYYY/MM/DD");
           const eventIndices = mark.reduce((acc, cur, index) => {

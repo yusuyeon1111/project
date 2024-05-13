@@ -97,7 +97,7 @@
   .dot {
     height: 12px;
     width: 12px;
-    background-color: #f87171;
+    background-color: black;
     border-radius: 50%;
     display: flex;
     margin-left: 38px;
@@ -127,3 +127,7 @@
     color: #4974FF;
     padding: 10px;
   }
+
+  .react-calendar__month-view__days__day--weekend {
+    color: black;
+}

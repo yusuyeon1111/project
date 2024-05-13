@@ -46,10 +46,8 @@ const Header = () => {
                 <h2>{cloud}</h2>
             </div>
             <div className='weather'>
-                <p>현재온도 :</p>
+                <p style={{marginTop:'50px'}}>현재온도 :</p>
                 <p> {temp}°C</p>
-                <p>체감온도 :</p>
-                <p> {feelTemp}°C</p>
             </div>
         </div>
     </div>
