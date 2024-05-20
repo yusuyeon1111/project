@@ -76,14 +76,16 @@ const Week = () => {
   }, [clk, clkDay]);
 
   return (
-    <div >
-      <p style={{fontSize : '25px', marginLeft : '80px'}}>오늘은 {month}월 {date}일 {day} 입니다!</p>
+    <div className='today-container'>
+      <p style={{fontSize : '25px', marginLeft : '80px'}} className='today'>오늘은 {month}월 {date}일 {day} 입니다!</p>
+      <div className='border-act'>
+      <p style={{border:'px solid black'}}></p>
+      </div>
       <div className='week-icon'>
       <FaPlusSquare
         style={{ fontSize: '35px', color: "#4974FF" }}
         onClick={() => nav("/cal")}
         />
-
       </div>
       <div className='week-container'>
       <div className='week-Sunday' style={today === 0 && !clk ? { backgroundColor: '#4974FF', color:'white' } : first == clkDay && clk ? {backgroundColor: '#4974FF', color:'white' }:null} 

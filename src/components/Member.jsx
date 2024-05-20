@@ -39,6 +39,7 @@ const Member = () => {
         const response = await axios.get('/apiRest/rest');
         const filterRestList = response.data.filter(item => item['근태일자'].replace(/\s/g,'') == todayFull );
         setRestList(filterRestList);
+        console.log('rest',response.data)
       } catch (error) {
         console.error('Error fetching data:', error);
       }

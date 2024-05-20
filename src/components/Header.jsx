@@ -37,8 +37,17 @@ const Header = () => {
   return (
     <div className='header'>
         <div>
-            <img src={img} className='logo'/>
-            <div className='welcome'>Have A Good Day!</div>
+            <h1>
+                <span>C</span>
+                <span>U</span>
+                <span>R</span>
+                <span>O</span>
+                <span>N</span>
+                <span>S</span>
+                <span>Y</span>
+                <span>S</span>
+               
+                </h1>
         </div>
         <div className='weather-container'>
             <div className='icon'>
