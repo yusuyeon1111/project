@@ -1,3 +1,7 @@
+body {
+  height: 100%;
+}
+
 .car-container {
     display: flex;
     text-align: center;
@@ -5,6 +9,7 @@
     justify-content: center;
     border-radius: 20px;
     border: solid 1px gainsboro;
+    height: 25%;
 }
 
 .car {
