@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/project/static/css/main.06d403aa.css",
+    "main.js": "/project/static/js/main.24623404.js",
+    "static/js/453.5e560239.chunk.js": "/project/static/js/453.5e560239.chunk.js",
+    "static/media/SEBANG Gothic.ttf": "/project/static/media/SEBANG Gothic.db6b063ed02c51ddb019.ttf",
+    "static/media/SEBANG Gothic Bold.ttf": "/project/static/media/SEBANG Gothic Bold.30f4399d3b4155a0202c.ttf",
+    "static/media/SEBANG Gothic OTF.otf": "/project/static/media/SEBANG Gothic OTF.c391af96611c7a06ea0a.otf",
+    "static/media/SEBANG Gothic OTF Bold.otf": "/project/static/media/SEBANG Gothic OTF Bold.d1791dfb9b6d5e4f30e6.otf",
+    "static/media/info.png": "/project/static/media/info.716f4805444a2ce7953b.png",
+    "static/media/logo.PNG": "/project/static/media/logo.5748e204701ce512ac86.PNG",
+    "static/media/logo.svg": "/project/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/project/index.html",
+    "main.06d403aa.css.map": "/project/static/css/main.06d403aa.css.map",
+    "main.24623404.js.map": "/project/static/js/main.24623404.js.map",
+    "453.5e560239.chunk.js.map": "/project/static/js/453.5e560239.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06d403aa.css",
+    "static/js/main.24623404.js"
+  ]
+}
