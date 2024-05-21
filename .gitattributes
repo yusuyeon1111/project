@@ -1,3 +1,4 @@
 # Ensure package-lock.json uses LF line endings
 package-lock.json text eol=lf
 package.json text eol=lf
+index.js text eol=lf
