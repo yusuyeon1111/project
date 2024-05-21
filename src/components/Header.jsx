@@ -21,7 +21,7 @@ const Header = () => {
             console.log(res)
             setIcon(`https://openweathermap.org/img/wn/${res.data.weather[0].icon}@2x.png`)
             setCloud(res.data.weather[0].description)
-            setTemp(parseInt(res.data.main.temp+2))
+            setTemp(parseInt(res.data.main.temp+3))
             setFeelTemp(parseInt(res.data.main.feels_like+2))
             console.log(res.data)
         }).catch((err)=>console.log(err))
