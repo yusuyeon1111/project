@@ -10,3 +10,4 @@
 
 ## 화면
 
+![그림1](https://github.com/user-attachments/assets/bba891e7-d262-4f27-8196-75c0b24d8918)
