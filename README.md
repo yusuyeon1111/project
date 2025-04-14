@@ -1,4 +1,8 @@
 # 신입사원 개발 역량 강화를 위한 자유 프로젝트
+## 사용언어
+<img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" /> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white" /> <img src="https://img.shields.io/badge/CSS-239120?style=for-the-badge&logo=css3&logoColor=white" />
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+<img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
 
 ## 개발 배경
 - 회사 내규 ERP를 사용하고 있으나, 팀원들의 연차나 휴가 소식 중요한 프로젝트 일정등을 사이트에 접속해 조회해야한다는 불만이 존재함.
