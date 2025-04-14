@@ -9,5 +9,6 @@
 - 리액트에서 데이터를 활용해 화면을 구현함
 
 ## 화면
+![image](https://github.com/user-attachments/assets/d277ee4c-08ed-4f08-9beb-49934dd65267)
+![image](https://github.com/user-attachments/assets/e4ef5179-f832-4628-bdfc-1f48b6ecfb2c)
 
-![그림1](https://github.com/user-attachments/assets/bba891e7-d262-4f27-8196-75c0b24d8918)
